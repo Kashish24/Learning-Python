@@ -1,0 +1,2 @@
+Above script will generate a JSON files in a Human Readable format by reading Sample JSON file to get the structure of JSON Key-Value Pairs.
+Later on it will read the value of specific columns which needs to be changed for different JSON Files.
