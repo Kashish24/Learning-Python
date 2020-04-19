@@ -10,3 +10,5 @@ Psedocode for the above program:
     Generating one unique name for the output JSON file.
     Opening a .JSON file with above generated name
       Write the content to the output file.
+
+I have also attached the sample JSON & Excel sheet for the input. Change the path accordingly.
