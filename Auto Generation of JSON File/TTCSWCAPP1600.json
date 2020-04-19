@@ -1,0 +1,68 @@
+{
+        "InterfaceId": "TTCSWCAPP1600_OT",
+        "ApplicationName": "Total Tyre Control SWC",
+        "InterfaceType": "AccessDB",
+        "IntegrationTool": "BODS",
+        "RegistrationType": "New",
+        "RelatedInterfaceID": "",
+        "SchemaEvolution": "N",
+        "KeyColumns": [],
+        "UnstructuredDataColumns": ["N"],
+        "TimeZone": "Australia/Melbourne",
+        "ConvertTimestampToUTC": "Y",
+        "AuditIngestionSortkey": "N",
+        "IngestionType": "OneTime",
+        "IngestionTypeConfiguration": {
+                "OneTime": {
+                        "Frequency": "NA"
+                }
+        },
+        "IngestionPattern": "Batch",
+                "IngestionPatternConfiguration": {
+                "Batch": {
+                        "SourceTableName": "APPLICATION",
+                        "FileNamePattern": "BHP_TTC_SWC_APPLICATIONS_DATA_YYYY-MM-DD_HH24-MI-SS",
+                        "LocalFilePath": "NA",
+                        "DataClassification": "Internal - SFSA: 1380",
+                        "FileFormat": "CSV",
+                        "Delimiter": ",",
+                        "EnclosedWithDoubleQuotes": "Y"
+                }
+        },
+        "LoadType": "FullRefresh",
+        "LoadTypeConfiguration": {
+                "PartialRefresh": {
+                        "PartialRefreshFilter": "",
+                        "PartialRefreshThreshold": ""
+                }
+        },
+        "Comments": "Source system data extracted using BODS from BHP SFTP Server and ingested into EDH HDFS Location",
+        "NotificationEmail": ["DL-TECH-ALL-MCOE-DIM-BuildTeam", "DL-TECH-ALL-MCOE-DMP-BuildTeam"],
+        "DataRetentionPolicy": "Default",
+        "CustomDataRetentionPolicy": {
+                "Criteria": {
+                        "NumberofDays": "1827"
+                }
+        },
+        "SourceApplicationReferenceAndID": "N/A - Vendor Managed System - SFTP file transfer",
+        "SourceApplicationDescription": "Total Tyre Control (TTC) is tyre management tool that identifies the best tyre for the job,schedules and monitors day to day tyre maintenance,reports on tyre performance and condition (both on screen and printed) and includes accurate tyre budget forecasting. Total Tyre Control (TTC) will perform tyre brand comparisons,project inventory needs,evaluate repair and retread performance,monitor casing age,flag tyre warnings,detect possible mechanical problems and calculate cost per kilometer (or mile) based on actual tyre performance.",
+        "Region": "Minerals Australia",
+        "Asset": "BMC",
+        "OperationName": "South Walker Creek",
+        "Commodity": "Coal",
+        "BusinessOwner": "Craig Mason",
+        "DataOwner": "Craig Mason",
+        "DataSteward": "Anthony Chong",
+        "FunctionalSME": "Craig Mason",
+        "TechnicalSME": "Peter Field",
+        "VendorContact": "Peter Field",
+        "DateofDataSensitivityAsssement":"28/11/2019",
+        "NextDataSensitivityAssessmentDue": "28/11/2019",
+        "DataSet": "Wear Analysis & Results",
+        "ActiveFlag": "Y",
+        "ClosedOnDate": "30/10/2099",
+        "RawCleansedLayerDBName": "rc_ttc_swc",
+        "RawCleansedLayerTBLName": "application_av",
+        "CreatedBy": "EDH_ServiceID",
+        "CreatedOn": "30/03/2020"
+}
