@@ -1,0 +1,2 @@
+This script will login into your instagram account and like the top 10 posts which comes up in the search on the 
+basis of given hashtag Keywords.
