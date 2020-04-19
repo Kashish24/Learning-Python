@@ -1,2 +1,12 @@
-Above script will generate a JSON files in a Human Readable format by reading Sample JSON file to get the structure of JSON Key-Value Pairs.
-Later on it will read the value of specific columns which needs to be changed for different JSON Files.
+In this script. we need to generate JSON files for different Tables. Some Key-Value pair vaules will be different for different table while other key-value pair remain same for all the tables.
+
+Psedocode for the above program:
+
+1) Read JSON file. It will simply read it as a text.
+2) Convert the Above read text to the JSON format using JSON Package.
+3) Read the excel sheet in which we will have a detail of values of the keys(Key-Value Pair) which we need to change for different JSON files(i.e. for different Tables).
+4) Iterating through different rows of excel sheet:
+    Assigning table specific values to the keys.
+    Generating one unique name for the output JSON file.
+    Opening a .JSON file with above generated name
+      Write the content to the output file.
