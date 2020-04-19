@@ -1,0 +1,5 @@
+This script will automatically login into your Instagram account when gets run.
+  remove the last line of the code to make the login account open otherwise it will close the tab after 5 seconds.
+
+Note: Please Replace your username and password in the script.
+P.S:- Make sure selenium package and Browser driver is installed in your system.
